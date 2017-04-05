@@ -19,7 +19,7 @@ public class Client {
 			ObjectInputStream input = new ObjectInputStream(server.getInputStream());
 			Scanner keyboard = new Scanner(System.in);
 			Object str = new Object();
-			while (!str.toString().toLowerCase().equals("quit")) {
+			while (!str.toString().toLowerCase().equals("goodbye")) {
 				System.out.print("Enter a message: ");
 				str = keyboard.next();
 				System.out.println(str.toString());
